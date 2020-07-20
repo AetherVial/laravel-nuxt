@@ -40,7 +40,7 @@ import Card from '@/components/Card'
       }
     },
     async asyncData() {
-      let res = await axios.get('https://jsonplaceholder.typicode.com/todos')
+      let res = await axios.get('https://jsonplaceholder.typicode.com/posts')
       return {posts: res.data}
     },
     head: {
