@@ -4,9 +4,7 @@
 
 
     <div class="container">
-      <h4 v-for="post in posts" v-bind:key="post.id">
-        {{post.title}}
-      </h4>
+      <Card v-for="post in posts" v-bind:key="post.id" :post="post"/>
     </div>
   </div>
 </template>
@@ -14,7 +12,7 @@
 <script>
 
 import axios from 'axios'
-
+import Card from '@/components/Card'
 // export default {
   
 //   data() {
