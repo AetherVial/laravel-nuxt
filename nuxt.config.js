@@ -51,6 +51,12 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '@/plugins/scrollto.js',
+    {
+      src: '@/plugins/vueselect.js',
+      srr: false
+    }
+    
   ],
   /*
   ** Auto import components
