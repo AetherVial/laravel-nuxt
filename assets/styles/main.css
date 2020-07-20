@@ -10,3 +10,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
