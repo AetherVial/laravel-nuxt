@@ -29,11 +29,11 @@ import {mapGetters} from 'vuex'
       // }
       ...mapGetters(['posts']) //can access multiple getters using mapgetters
     },
-    // async fetch({store}) {
-    //   let {data} = await axios.get('https://jsonplaceholder.typicode.com/posts')
-    //   //return allPosts()
-    //   store.dispatch('setPosts', data)
-    // },
+    async fetch({store}) {
+      let {data} = await axios.get('https://jsonplaceholder.typicode.com/posts')
+      //return allPosts()
+      store.dispatch('setPosts', data)
+    },
     head: {
       title: 'List of Posts'
     }
