@@ -17,6 +17,11 @@ export default {
   async asyncData(context) {
     let {data} = await axios.get(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
     return {post: data}
+  },
+  head() {
+    return {
+      title: this.post.title
+    }
   }
 }
 </script>
